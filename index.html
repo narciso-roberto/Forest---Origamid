@@ -6,47 +6,57 @@
     <title>Tailwind CSS</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-amber-950">
-    <div class="m-10">
-      <h1 class="text-4xl border-t-2 border-gray-300 border-b-2 py-[5rem]">
-        Curriculum
-      </h1>
+  <body>
+    <header
+      class="flex justify-between items-center max-w-[1800px] mx-auto py-5 px-5"
+    >
+      <div class="flex gap-10 items-center">
+        <div class="">
+          <img src="./images/logo.svg" alt="" class="" />
+        </div>
+        <nav>
+          <ul class="flex gap-3">
+            <li class="*:py-3 *:px-4"><a href="./" class="">Features</a></li>
+            <li class="*:py-3 *:px-4"><a href="./" class="">Company</a></li>
+            <li class="*:py-3 *:px-4"><a href="./" class="">Careers</a></li>
+            <li class="*:py-3 *:px-4"><a href="./" class="">About</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="flex flex-col gap-10 mt-9">
-        <div class="w-70">
-          <h2 class="text-2xl">Habilidades</h2>
-          <div class="mt-2 flex flex-col gap-3">
-            <div class="py-2 px-4 bg-gray-100 border-l-5 border-purple-900">
-              HTML
-            </div>
-            <div class="py-2 px-4 bg-gray-100 border-l-5 border-purple-900">
-              CSS
-            </div>
-            <div class="py-2 px-4 bg-gray-100 border-l-5 border-purple-900">
-              Javascript
-            </div>
-          </div>
+      <ul class="flex gap-3">
+        <li class="*:py-3 *:px-4"><a href="./" class="">Login</a></li>
+        <li class="*:py-3 *:px-4">
+          <a href="./" class="border-1 rounded-2xl">Register</a>
+        </li>
+      </ul>
+    </header>
+
+    <main
+      class="grid max-w-[1600px] grid-cols-[1.5fr_1fr] mx-auto gap-10 px-10"
+    >
+      <div class="max-w-[650px] flex flex-col justify-between mt-25 gap-9">
+        <div class="flex flex-col items-start gap-15">
+          <h1 class="text-8xl font-bold">
+            <span class="block">Make</span> remote work
+          </h1>
+          <p class="text-xl max-w-[450px]">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar
+          </p>
+          <button class="py-4 px-8 border-1 rounded-2xl">Learn more</button>
         </div>
 
-        <div class="w-70">
-          <h2 class="text-2xl">Linguas</h2>
-          <div class="mt-2 flex flex-col">
-            <div class="py-2 px-4 bg-gray-100 border-l-5 border-purple-900">
-              Portugues
-            </div>
-            <div
-              class="py-2 px-4 bg-gray-200 border-l-5 border-purple-900 ml-2 -mt-1"
-            >
-              Ingles
-            </div>
-            <div
-              class="py-2 px-4 bg-gray-300 border-l-5 border-purple-900 ml-4 -mt-2"
-            >
-              Espanhol
-            </div>
-          </div>
+        <div class="flex justify-between items-center">
+          <img src="./images/client-audiophile.svg" alt="" />
+          <img src="./images/client-databiz.svg" alt="" />
+          <img src="./images/client-maker.svg" alt="" />
+          <img src="./images/client-meet.svg" alt="" />
         </div>
       </div>
-    </div>
+      <div>
+        <img class="w-[100%]" src="./images/image-hero-desktop.png" alt="" />
+      </div>
+    </main>
   </body>
 </html>
